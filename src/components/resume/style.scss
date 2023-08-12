@@ -1,0 +1,301 @@
+/* ----------------------- */
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* ----------------------- */
+/* Colors */
+$raisin-black: #161925;
+$raisin-black-lighter: rgb(98, 109, 138);
+$raisin-black-light: rgb(27, 31, 43);
+// $cosmic-latte: rgb(98, 109, 138);
+$syracuse-red-orange: #C84C09;
+$skobeloff: #57ffd5;
+/* ----------------------- */
+/* Font Styles */
+$main-font-family: 'Poppins', sans-serif;
+$title-font-family: 'Bebas Neue', sans-serif;
+$default-font-size: 12px;
+$title-font-size: 16px;
+$font-size-icon: 18px;
+/* ----------------------- */
+/* Body */
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: $main-font-family;
+    font-size: $default-font-size;
+    z-index: -1003;
+    position: relative;
+}
+/* ----------------------- */
+/* Header */
+.header {
+    height: 5%;
+    width: 100%;
+    background: $raisin-black;
+    border-bottom: 3px solid $raisin-black-light;
+    z-index: -1001;
+}
+/* ----------------------- */
+/* Main Content */
+.main {
+    display: flex;
+    background: $raisin-black;
+    height: auto;
+    min-height: 95%;
+    // width: 100%;
+    // top: 5%;
+    z-index: -1001;
+}
+.main .container {
+    padding: 20px;
+}
+.main-title {
+    color: $skobeloff;
+    font-size: 16px;
+    padding: 10px;
+}
+/* About */
+.about-box {
+    padding: 20px;
+}
+.about-box .about-child {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 25em;
+}
+.about-box .about-child span {
+    font-size: 100px;
+    font-family: $title-font-family;
+    color: white;
+}
+.about-box .about-child p {
+    font-size: 18px;
+    color: $raisin-black-lighter;
+}
+/* Applications */
+.box {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.box .box-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    min-height: 20em;
+    padding: 20px;
+    color: white;
+    background: $raisin-black-light;
+}
+.box .box-child span {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+    letter-spacing: 1px;
+}
+.box .box-child p {
+    color: $raisin-black-lighter;
+}
+/* Experiences */
+.exp-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.exp-box .exp-child span {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(30, 86, 207);
+}
+.exp-box .exp-child p {
+    font-size: 14px;
+    color: white;
+}
+/* ----------------------- */
+/* Sidebar */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    // height: 95%;
+    // min-height: 95%;
+    width: 25em;
+    background-color: $raisin-black;
+    border-right: 3px solid $raisin-black-light;
+}
+/* Sidebar - header */
+.header-sidebar {
+    height: 25%;
+    min-height: 25%;
+}
+/* Sidebar - positions-container */
+.header-sidebar .positions-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+}
+.positions-container a {
+    text-decoration: none;
+    color: $raisin-black-lighter;
+}
+/* Sidebar - img-container */
+.header-sidebar #img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 2em 0;
+}
+.header-sidebar #img-container img {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% auto;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+.header-sidebar #img-container > span {
+    // text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $skobeloff;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 20px 0 0 0;
+}
+/* Sidebar - article */
+.article-sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70%;
+    min-height: 70%;
+    background: $raisin-black-light;
+}
+/* ----------------------- */
+/* Div containers */
+.article-sidebar 
+.div-1st, 
+.div-2nd,
+.div-3rd,
+.div-4th,
+.div-5th {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em 0 1em 0;
+    color: white;
+    border-bottom: 1px solid rgb(44, 53, 70);
+}
+/* ----------------------- */
+/* Div-1st */
+.div-1st .div-child {
+    display: flex;
+    justify-content: space-between;
+}
+.div-1st .div-child span {
+    font-weight: bold;
+}
+.div-1st .div-child label {
+    color: $raisin-black-lighter;
+}
+/* ----------------------- */
+/* Div-2nd */
+.div-2nd {
+    padding: 1em 0 2em 0;
+}
+.div-2nd span {
+    padding: 10px 0;
+    text-align: center;
+}
+/* ----------------------- */
+/* Div-3rd */
+.div-3rd {
+    padding: 1em 0 2em 0;
+}
+.div-3rd span {
+    padding: 5px 0;
+}
+.div-3rd .progress {
+    height: 10px;
+    font-size: 8px;
+}
+/* ----------------------- */
+/* Div-4th */
+.div-4th .paragraph {
+    padding: 2px 0;
+}
+.div-4th .paragraph i {
+    margin-right: 4px;
+    color: $skobeloff;
+}
+.div-4th .paragraph span {
+    color: $raisin-black-lighter;
+}
+/* ----------------------- */
+/* Div-5th */
+.div-5th {
+    border: none;
+}
+.div-5th a > i {
+    margin-left: 4px;
+}
+.div-5th a {
+    color: $raisin-black-lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1px 1px 1px 0;
+}
+.div-5th a:hover {
+    background: $raisin-black;
+    transition: 0.2s all;
+}
+/* Sidebar - footer */
+.footer-sidebar {
+    height: 40px;
+    // min-height: 5%;
+}
+/* Link-container */
+.link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    // padding: 8px 0;
+}
+.link-container > a {
+    color: $raisin-black-lighter;
+    font-size: $font-size-icon;
+}
+.link-container > a:hover {
+    color: white;
+    transition: 0.2s all;
+}
+.link-container > a:nth-child(n+2) {
+    margin-left: 10px;
+}
+:where(h1) {
+    color: white;
+    font-size: $title-font-size;
+    font-weight: bold;
+}
+
+/* ----------------------- */
+/* Boostrap Overrides */
+@media (max-width: 576px) {
+    body {
+        font-size: 8px;
+    }
+}
+@media (max-width: 1123px) {
+    body {
+        font-size: 10px;
+    }
+}
